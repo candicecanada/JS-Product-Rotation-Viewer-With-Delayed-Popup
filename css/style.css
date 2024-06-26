@@ -1,0 +1,75 @@
+/* Chaoqun Ding */
+
+@font-face {
+    font-family: salsa;
+    src: url(../fonts/Salsa/Salsa-Regular.ttf);
+}
+:root{
+    --main-color: #2f4f4f;
+    --default-gap-padding-border-radius: 10px;
+    --main-image-width: 240px;
+    --thumbnails-width: 70px;
+}
+#wrapper{
+    margin: auto;
+    max-width: 1080px;
+    min-height: 100vh;
+    display: grid;
+    gap: var(--default-gap-padding-border-radius);
+    grid-template-rows: auto 1fr auto;
+    font-family: salsa;
+    color: var(--main-color);
+    background-color: white;
+}
+header, footer{
+    color: white;
+    background-color: var(--main-color);
+    padding: var(--default-gap-padding-border-radius);
+    text-align: center;
+}
+button{
+    color: white;
+    background-color: var(--main-color);
+    border: solid 2px black;
+    padding: 5px;
+    font-weight: bold;
+}
+#product-info{
+    max-width: 400px;
+    border: solid 4px var(--main-color);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+h1, h2{
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+button:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+#pop-up{
+    background-color: var(--main-color);
+    color: white;
+    border: solid 3px black;
+    border-radius: 10px;
+    z-index: 100;
+    position: absolute;
+    min-height:50%;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    font-size: small;
+    padding: 10px;
+    opacity: 0;
+}
+#pop-up-row1{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
